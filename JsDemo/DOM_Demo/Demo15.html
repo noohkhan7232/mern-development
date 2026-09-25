@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style></style>
+  </head>
+  <body>
+    <h1 align="center">DOM Demo Page 14</h1>
+    <button onclick="myfun(productDetails)">Show Table</button>
+    <div id="tableDiv"></div>
+
+    <script>
+      const productDetails = [
+        { proId: 1201, proName: "iMac", proPriceD: 899, proQty: 3 },
+        { proId: 1306, proName: "MacBook", proPriceD: 1199, proQty: 5 },
+        { proId: 1006, proName: "iPad", proPriceD: 799, proQty: 8 },
+        { proId: 1461, proName: "earPods", proPriceD: 599, proQty: 10 },
+      ];
+
+      function myfun(productDetails) {
+        let d = document.getElementById("tableDiv");
+        d.innerHTML = "";
+
+        let table = document.createElement("table");
+        table.setAttribute("border", "5px");
+        table.setAttribute("width", "500px");
+        table.setAttribute("align", "center");
+
+        // Creating Headers
+        let thead = table.createTHead();
+        let headRow = thead.insertRow();
+        headRow.style.backgroundColor = "black";
+        headRow.style.color = "white";
+        headRow.style.textAlign = "center";
+
+        // Creating Column headings
+        let keys = Object.keys(productDetails[0]);
+        keys.forEach((key) => {
+          let col = headRow.insertCell();
+          col.textContent = key;
+          col.style.cursor = "pointer";
+          col.addEventListener("click", () => {
+            let sorted = [...productDetails].sort((a, b) => {
+              if (typeof a[key] === "number") return a[key] - b[key];
+              else if (typeof a[key] === "string")
+                return a[key].localeCompare(b[key]);
+            });
+            // console.log(sorted);
+            myfun(sorted);
+          });
+        });
+
+        productDetails.forEach((product) => {
+          let row = table.insertRow();
+
+          for (let key in product) {
+            let col = row.insertCell();
+            col.textContent = product[key];
+          }
+        });
+
+        // document.body.append(table);
+        d.append(table);
+      }
+    </script>
+  </body>
+</html>

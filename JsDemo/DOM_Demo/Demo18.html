@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .parent {
+        width: 300px;
+        border: 2px solid;
+      }
+      .parent > button {
+        width: 100px;
+        height: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <button>1</button><button>2</button><button>3</button><button>4</button
+      ><button>5</button><button>6</button><button>7</button><button>8</button
+      ><button>9</button>
+    </div>
+
+    <script>
+      let parentEle = document.querySelector(".parent");
+      parentEle.addEventListener("click", (event) => {
+        
+        // event.target (to read element where event occured)
+        console.log(event.target.textContent);
+        event.target.style.backgroundColor = "red";
+        event.target.style.color = "white";
+      });
+    </script>
+  </body>
+</html>

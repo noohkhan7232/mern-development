@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #parent {
+        background-color: aqua;
+        min-height: 200px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="myfun()">Add New Button</button>
+    <div id="parent"></div>
+    <script>
+      let p = document.getElementById("parent");
+      p.addEventListener("click", (event) => {
+        console.log("Parent Clicked....");
+        // console.log(event.target);
+        console.log(event.target.textContent);
+      });
+
+      let count = 1;
+      function myfun() {
+        let btn = document.createElement("button");
+        btn.textContent = "Button " + count;
+        count++;
+
+        p.append(btn);
+      }
+    </script>
+  </body>
+</html>

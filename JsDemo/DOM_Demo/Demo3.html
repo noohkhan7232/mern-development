@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+  <title>Document</title>
+  
+</head>
+<body>
+    
+  <h1 align="center">DOM Demo Page 3</h1>
+  
+  <input type="text" id="unm" name="unm" placeholder="Enter Name" />
+  <button onclick="myfun()">Button</button>  
+  
+  <script>
+    function myfun()
+    {
+        let inpEle =  document.getElementById('unm')
+        console.log(inpEle.value);
+        console.log(inpEle.name);
+        console.log(inpEle.type);
+        console.log(inpEle.placeholder);
+        inpEle.disabled=true       
+
+    }   
+    
+  </script>
+</body>
+</html>

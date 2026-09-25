@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      const userData = [
+        { userId: 1001, userName: "Sachin", userAge: 45, userSalary: 56000 },
+        { userId: 1002, userName: "Virat", userAge: 45, userSalary: 34000 },
+        { userId: 1003, userName: "Saurabh", userAge: 45, userSalary: 10000 },
+        { userId: 1004, userName: "Yuvi", userAge: 45, userSalary: 51000 },
+        { userId: 1005, userName: "Rahul", userAge: 45, userSalary: 36000 },
+      ];
+
+      function findUser(userId, nextTask) {
+        console.log("Fetching User:" + userId);
+        setTimeout(() => {
+          const user = userData.find((user) => user.userId === userId);
+          if (user) console.log(user);
+          else console.log("User Not Found...");
+          if (nextTask) nextTask();
+        }, 3000);
+      }
+    </script>
+  </head>
+  <body>
+    <hr color="navy" size="10" />
+    <h1 align="center">Demo Web Page</h1>
+    <hr color="navy" size="10" />
+    <script>
+      // Task 1
+      findUser(1001, () => {
+        // Task 2
+        findUser(1002, () => {
+          // Task 3
+          findUser(1003);
+        });
+      });
+      // findUser(1013);
+      // findUser(1001);
+    </script>
+  </body>
+</html>

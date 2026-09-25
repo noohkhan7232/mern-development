@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      // function myfun(millisec) {
+      //   console.log("Process Started...");
+      //   let start = new Date().getTime();
+      //   while (new Date().getTime() < start + millisec) console.log("Hi...");
+
+      //   console.log("Process Completed....");
+      // }
+
+      function myfun(millisec) {
+        console.log("Process Started...");
+        setTimeout(() => {
+          console.log("Process Done Successfully..");
+        }, millisec);
+        console.log("Process Completed....");
+      }
+    </script>
+  </head>
+  <body>
+    <hr color="navy" size="10" />
+    <h1 align="center">Demo Web Page</h1>
+    <hr color="navy" size="10" />
+    <script>
+      console.log("Program starts Running...");
+      myfun(5000);
+      console.log("Program Ends...");
+    </script>
+  </body>
+</html>

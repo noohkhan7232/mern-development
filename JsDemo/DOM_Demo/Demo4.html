@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+  <title>Document</title>
+  
+</head>
+<body>
+    
+  <h1 align="center">DOM Demo Page 4</h1>
+  
+  <input type="password" id="pwd" placeholder="Enter Password" />
+  
+  <input type="checkbox" onchange="myfun()" id="pwdChk" />
+  <label for="pwdChk" id="pwdlabel">Show</label>
+  
+  <script>
+    function myfun()
+    {
+        let inpEle =  document.getElementById('pwd')
+        inpEle.type  = (inpEle.type === 'password')?'text':'password'
+        
+        let label =  document.getElementById("pwdlabel")
+        label.textContent = (inpEle.type === 'password')?"Show":"Hide"
+        
+
+    }   
+    
+  </script>
+</body>
+</html>

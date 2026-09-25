@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style></style>
+  </head>
+  <body>
+    <h1 align="center">DOM Demo Page 13</h1>
+
+    <script>
+      let button = document.createElement("button");
+      button.textContent = "Button";
+      button.addEventListener("click", () => {
+        alert("Hi from Button.... :)");
+      });
+
+      document.body.append(button);
+    </script>
+  </body>
+</html>

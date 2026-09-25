@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+      .cls1 {
+        background-color: yellow;
+        color: navy;
+        padding: 20px;
+      }
+      .cls2 {
+        text-align: center;
+        font-family: chiller;
+        font-size: x-large;
+        box-shadow: 0px 4px 8px 3px grey;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 align="center">DOM Demo Page 9</h1>
+    <h1>Heading 1</h1>
+    <p>Lorem ipsum dolor sit amet consectetur.</p>
+    <h1>Heading 2</h1>
+    <h1>Heading 3</h1>
+    <span>This is Span</span>
+
+    <button onclick="myfun()">Button</button>
+
+    <script>
+      function myfun() {
+        let h = document.getElementsByTagName("h1");
+        for (let heading of h) {
+          heading.style.backgroundColor = "aqua";
+          heading.style.color = "navy";
+          heading.style.textAlign = "center";
+          heading.style.lineHeight = "100px";
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+      .cls1 {
+        background-color: yellow;
+        color: navy;
+        padding: 20px;
+      }
+      .cls2 {
+        text-align: center;
+        font-family: chiller;
+        font-size: x-large;
+        box-shadow: 0px 4px 8px 3px grey;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 align="center">DOM Demo Page 12</h1>
+
+    <button onclick="myfun()">Button</button>
+    <div id="myDiv" style="border: 5px solid; height: 100px"></div>
+
+    <script>
+      function myfun() {
+        let h = document.createElement("h1");
+        h.textContent = "Hello World";
+        h.setAttribute("align", "center");
+
+        // document.body.append(h);
+        // document.body.prepend(h);
+        let d = document.getElementById("myDiv");
+        d.append(h);
+      }
+    </script>
+  </body>
+</html>

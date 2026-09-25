@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="myfun()">Button</button>
+
+    <h1 id="myH">Heading 1</h1>
+
+    <div id="myDiv">
+      My Division
+      <span id="mySpan1">Span 1</span>
+      <span>Span 2</span>
+      <span>Span 3</span>
+    </div>
+
+    <script>
+      function myfun() {
+        // let span = document.querySelector("#mySpan1");
+        let h = document.querySelector("#myH");
+        // h.remove();
+        let p = document.createElement("p");
+        p.textContent = "MyParagraph";
+        h.replaceWith(p);
+
+        // h.after(p);
+        // console.log(span);
+        // console.log(span.parentElement);
+        // console.log(span.parentNode);
+        // console.log(span.children);
+        // console.log(span.childNodes);
+        // console.log(span.firstChild);
+        // console.log(span.firstElementChild);
+        // span.firstElementChild.textContent = "Kuch Nahi Karange"
+        console.log(span.nextElementSibling);
+        console.log(span.previousElementSibling);
+        // span.after
+        // span.before
+      }
+    </script>
+  </body>
+</html>

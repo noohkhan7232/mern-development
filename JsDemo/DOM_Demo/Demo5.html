@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+  <title>Document</title>
+  
+</head>
+<body>
+    
+  <h1 align="center">DOM Demo Page 5</h1>
+  
+  <p id="myP">
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam repellat molestiae magni labore vel, voluptatem commodi cum consequatur quos dolores iste rem illum libero minima est nisi? Consectetur, voluptatum placeat.
+  </p> 
+
+  <button onclick="myfun()">Button</button>  
+  <script>
+    function myfun()
+    {
+        let para =  document.getElementById("myP")
+        para.style.backgroundColor='navy'
+        para.style.color='white'
+        para.style.textAlign='center'
+        para.style.padding='20px' 
+        para.style.boxShadow ='0 4px 8px 3px grey'      
+
+    }   
+    
+  </script>
+</body>
+</html>
