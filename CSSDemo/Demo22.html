@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        border: 1px solid red;
+        height: 600px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        /* align-items: center; */
+        align-content: center;
+      }
+
+      .container > div {
+        width: 100px;
+        height: 100px;
+        border: 1px solid navy;
+        font-size: x-large;
+      }
+
+      .container > div:nth-child(odd) {
+        background-color: yellow;
+      }
+      .container > div:nth-child(even) {
+        background-color: skyblue;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- div.container>div#d${MyDiv $}*5 -->
+    <div class="container">
+      <div id="d1">MyDiv 1</div>
+      <div id="d2">MyDiv 2</div>
+      <div id="d3">MyDiv 3</div>
+      <div id="d4">MyDiv 4</div>
+      <div id="d5">MyDiv 5</div>
+      <div id="d6">MyDiv 6</div>
+      <div id="d7">MyDiv 7</div>
+      <div id="d8">MyDiv 8</div>
+      <div id="d9">MyDiv 9</div>
+      <div id="d10">MyDiv 10</div>
+      <div id="d11">MyDiv 11</div>
+      <div id="d12">MyDiv 12</div>
+      <div id="d13">MyDiv 13</div>
+      <div id="d14">MyDiv 14</div>
+      <div id="d15">MyDiv 15</div>
+    </div>
+  </body>
+</html>

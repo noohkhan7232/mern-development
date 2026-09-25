@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      input:not(#subBtn) {
+        margin-bottom: 10px;
+        padding: 5px;
+        border: 1px solid blue;
+      }
+      /* input:focus {
+        background-color: skyblue;
+        font-family: jokerman;
+        outline: none;
+        border: 1px solid blue;
+        border-radius: 5px;
+      } */
+
+      /* input:invalid {
+        border: 2px solid red;
+      }
+      input:valid {
+        border: 2px solid green;
+      } */
+
+      input:user-invalid {
+        border: 2px solid red;
+      }
+      input:user-valid {
+        border: 2px solid green;
+      }
+    </style>
+  </head>
+  <body>
+    <form method="post">
+      <input
+        type="text"
+        id="unm"
+        placeholder="Enter User Name"
+        minlength="3"
+        required
+      /><br />
+      <input
+        type="password"
+        id="pwd"
+        placeholder="Password:Hp@123"
+        minlength="6"
+        required
+      /><br />
+      <input
+        type="email"
+        id="mail"
+        placeholder="Email:demo@mail.abc"
+        required
+      /><br />
+      <input type="submit" id="subBtn" /><br />
+    </form>
+  </body>
+</html>

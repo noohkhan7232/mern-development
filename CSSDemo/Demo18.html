@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #myP::before {
+        content: "Hi...";
+      }
+      #myP::after {
+        /* content: " Bye"; */
+        content: "😂";
+      }
+
+      ::marker {
+        /* color: red; */
+        content: "✔️";
+      }
+      ::selection {
+        background-color: yellow;
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="myP">Hello World</p>
+    <!-- ul>li{Link $}*5 -->
+    <ul>
+      <li>Link 1</li>
+      <li>Link 2</li>
+      <li>Link 3</li>
+      <li>Link 4</li>
+      <li>Link 5</li>
+    </ul>
+  </body>
+</html>

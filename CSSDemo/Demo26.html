@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 3px;
+      }
+      .container > * {
+        border: 1px solid;
+        border-radius: 2px;
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 100%;
+        font-size: x-large;
+        text-align: center;
+      }
+
+      .myheader {
+        background-color: navy;
+        color: white;
+        height: 150px;
+      }
+      .aside1,
+      .aside2 {
+        background-color: skyblue;
+        min-height: 200px;
+      }
+      .main {
+        background-color: yellowgreen;
+        height: 500px;
+      }
+      .myfooter {
+        background-color: black;
+        color: white;
+        height: 120px;
+      }
+
+      @media all and (min-width: 900px) {
+        .myheader {
+          order: 1;
+        }
+        .aside1 {
+          order: 2;
+          flex-grow: 1;
+          flex-shrink: 1;
+          flex-basis: 0%;
+        }
+        .main {
+          order: 3;
+          flex-grow: 4;
+          flex-shrink: 4;
+          flex-basis: 0%;
+        }
+        .aside2 {
+          order: 4;
+          flex-grow: 1;
+          flex-shrink: 1;
+          flex-basis: 0%;
+        }
+        .myfooter {
+          order: 5;
+        }
+      }
+
+      @media all and (min-width: 768px) and (max-width: 899px) {
+        .myheader {
+          order: 1;
+        }
+        .main {
+          order: 2;
+        }
+        .aside1 {
+          order: 3;
+          flex-grow: 1;
+          flex-shrink: 1;
+          flex-basis: 0%;
+        }
+        .aside2 {
+          order: 4;
+          flex-grow: 1;
+          flex-shrink: 1;
+          flex-basis: 0%;
+        }
+        .myfooter {
+          order: 5;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="myheader">My Header</header>
+      <aside class="aside1">Aside Left</aside>
+      <aside class="aside2">Aside Right</aside>
+      <main class="main">Content</main>
+      <footer class="myfooter">Footer</footer>
+    </div>
+  </body>
+</html>

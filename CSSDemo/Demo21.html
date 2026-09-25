@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    h1 {
+      display: none;
+    }
+    @media screen and (min-width: 800px) {
+      body {
+        background-color: red;
+      }
+      #myH1 {
+        display: block;
+      }
+    }
+    @media screen and (min-width: 500px) and (max-width: 799px) {
+      body {
+        background-color: greenyellow;
+      }
+    }
+
+    @media screen and (max-width: 499px) {
+      body {
+        background-color: blue;
+      }
+    }
+  </style>
+  <body>
+    <h1 id="myH1">Large Devices</h1>
+    <h1 id="myH2">Medium Devices</h1>
+    <h1 id="myH3">Small Devices</h1>
+  </body>
+</html>

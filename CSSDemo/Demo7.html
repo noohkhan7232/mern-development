@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style type="text/css">
+      .container {
+        border: 1px solid red;
+        height: 500px;
+        position: relative;
+      }
+      #d1,
+      #d2,
+      #d3,
+      #d4 {
+        width: 100px;
+        height: 100px;
+        border: 1px solid navy;
+      }
+      #d1 {
+        position: static;
+        background-color: yellow;
+        top: 50px;
+        left: 50px;
+      }
+      #d2 {
+        background-color: aqua;
+        /* position: relative;
+        top: 50px;
+        left: 50px; */
+      }
+
+      #d3 {
+        background-color: green;
+        position: absolute;
+        top: 20px;
+        left: 30px;
+      }
+      h1 {
+        background-color: navy;
+        color: white;
+        text-align: center;
+        line-height: 80px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Position Demo Page</h1>
+    <div class="container">
+      <div id="d1">DIV 1</div>
+      <div id="d2">DIV 2</div>
+      <div id="d3">DIV 3</div>
+      <div id="d4">DIV 4</div>
+    </div>
+  </body>
+</html>
