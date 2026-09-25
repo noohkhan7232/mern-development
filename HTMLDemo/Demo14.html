@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <table border="5px" width="500px" align="center" bgcolor="#bababa">
+      <tbody align="center">
+        <tr>
+          <td>Enter User Name</td>
+          <td>
+            <input type="text" />
+          </td>
+        </tr>
+        <tr>
+          <td>Password</td>
+          <td>
+            <input type="password" />
+          </td>
+        </tr>
+        <tr>
+          <td>Date of Birth</td>
+          <td>
+            <input type="date" min="2026-05-25" max="2026-07-15" />
+          </td>
+        </tr>
+        <tr>
+          <td>Email</td>
+          <td>
+            <input type="email" />
+          </td>
+        </tr>
+        <tr>
+          <td>Mobile No</td>
+          <td>
+            <input type="tel" />
+          </td>
+        </tr>
+
+        <tr>
+          <td>Gender</td>
+          <td>
+            <input type="radio" name="gen" id="m" />
+            <label for="m">Male</label>
+
+            <input type="radio" name="gen" id="f" />
+            <label for="f">Female</label>
+
+            <input type="radio" name="gen" />Others
+          </td>
+        </tr>
+
+        <tr>
+          <td>Qualification</td>
+          <td>
+            <select>
+              <option disabled selected>~~Select~~</option>
+              <option>BTech</option>
+              <option>MTech</option>
+              <option>BCA</option>
+              <option>MCA</option>
+              <option>BBA</option>
+              <option>MBA</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td>University</td>
+          <td>
+            <input type="text" list="mylist" />
+            <datalist id="mylist">
+              <option>AKTU</option>
+              <option>LPU</option>
+              <option>DU</option>
+              <option>CSJMU</option>
+              <option>CU</option>
+              <option>JNU</option>
+              <option>HBTU</option>
+              <option>IT BHU</option>
+            </datalist>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <input type="checkbox" id="chk1" />
+            <label for="chk1">Reading</label>
+
+            <input type="checkbox" id="chk2" />
+            <label for="chk2">Playing</label>
+          </td>
+        </tr>
+        <tr>
+          <td>Color</td>
+          <td>
+            <input type="color" />
+          </td>
+        </tr>
+
+        <tr>
+          <td>Date and Time</td>
+          <td>
+            <input type="datetime-local" />
+          </td>
+        </tr>
+
+        <tr>
+          <td>Upload Profile Pic</td>
+          <td>
+            <input type="file" accept=".png , .pdf" multiple />
+          </td>
+        </tr>
+
+        <tr>
+          <td>Hidden Value</td>
+          <td>
+            <input type="hidden" value="Emp10021" />
+          </td>
+        </tr>
+        <tr>
+          <td>Month and Week</td>
+          <td>
+            <input type="month" />
+            <input type="week" />
+          </td>
+        </tr>
+        <tr>
+          <td>CGPA</td>
+          <td>
+            <input type="number" min="1" max="10" step="0.01" />
+          </td>
+        </tr>
+        <tr>
+          <td>Range</td>
+          <td>
+            <input type="range" min="99" max="999" value="299" />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input type="submit" value="Register" />
+            <input type="reset" />
+            <input type="button" value="Button" />
+            <input type="image" src="../Images/CPP-Logo.jpg" width="70px" />
+
+            <button type="submit">&#128512;</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

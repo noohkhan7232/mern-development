@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form method="post" novalidate autocomplete="off">
+      <table border="5px" width="500px" align="center" bgcolor="#bababa">
+        <tbody align="center">
+          <tr>
+            <td>Enter User Name</td>
+            <td>
+              <input
+                type="text"
+                name="unm"
+                required
+                minlength="2"
+                maxlength="15"
+                value="Rohit"
+                readonly
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Password</td>
+            <td>
+              <input type="password" name="pwd" placeholder="Hp@123" required />
+            </td>
+          </tr>
+          <tr>
+            <td>Date of Birth</td>
+            <td>
+              <input name="dob" type="date" min="2026-05-25" max="2026-07-15" />
+            </td>
+          </tr>
+          <tr>
+            <td>Email</td>
+            <td>
+              <input type="email" name="mail" />
+            </td>
+          </tr>
+          <tr>
+            <td>Mobile No</td>
+            <td>
+              <input type="tel" name="mobNo" />
+            </td>
+          </tr>
+
+          <tr>
+            <td>Gender</td>
+            <td>
+              <input type="radio" name="gen" id="m" />
+              <label for="m">Male</label>
+
+              <input type="radio" name="gen" id="f" />
+              <label for="f">Female</label>
+
+              <input type="radio" name="gen" />Others
+            </td>
+          </tr>
+
+          <tr>
+            <td>Qualification</td>
+            <td>
+              <select name="qul">
+                <option disabled selected>~~Select~~</option>
+                <option>BTech</option>
+                <option>MTech</option>
+                <option>BCA</option>
+                <option>MCA</option>
+                <option>BBA</option>
+                <option>MBA</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td>University</td>
+            <td>
+              <input name="uniNm" type="text" list="mylist" />
+              <datalist id="mylist">
+                <option>AKTU</option>
+                <option>LPU</option>
+                <option>DU</option>
+                <option>CSJMU</option>
+                <option>CU</option>
+                <option>JNU</option>
+                <option>HBTU</option>
+                <option>IT BHU</option>
+              </datalist>
+            </td>
+          </tr>
+          <tr>
+            <td>Hobbies</td>
+            <td>
+              <input type="checkbox" name="chk1" id="chk1" />
+              <label for="chk1">Reading</label>
+
+              <input type="checkbox" name="chk2" id="chk2" />
+              <label for="chk2">Playing</label>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Upload Profile Pic</td>
+            <td>
+              <input name="proPic" type="file" accept=".png , .pdf" multiple />
+            </td>
+          </tr>
+
+          <tr>
+            <td>Hidden Value</td>
+            <td>
+              <input name="empId" type="hidden" value="Emp10021" />
+            </td>
+          </tr>
+
+          <tr>
+            <td>CGPA</td>
+            <td>
+              <input
+                name="cgpa"
+                value="9"
+                type="number"
+                min="1"
+                max="10"
+                step="0.01"
+                disabled
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Range</td>
+            <td>
+              <input name="range" type="range" min="99" max="999" value="299" />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <input type="submit" value="Register" />
+              <input type="reset" />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </body>
+</html>
+
+<!-- http://127.0.0.1:5500/HTMLDemo/Demo15.html?unm=Abhay&pwd=Hp%40123&dob=2026-06-23&mail=abhay%40gmail.com&mobNo=9090908765&gen=on&qul=BTech&uniNm=AKTU&chk1=on&proPic=avatar.png&empId=Emp10021&cgpa=9&range=471
+
+
+https://www.google.com/search?q=allenhouse+kanpur&sca_esv=d9f40adba4e5763b&sxsrf=APpeQnsUUuAeMyL-XLO598YSFaqeWP0V5g%3A1783407994069&source=hp&ei=eaVMapqxPO2fseMP_vzrsA4&iflsig=ABILxe8AAAAAakyzimMTruUuzH0X1eOJ3HklrD7xKy97&ved=0ahUKEwja0eK_gMCVAxXtT2wGHX7-GuYQ4dUDCDI&oq=allenhouse+kanpur&gs_lp=Egdnd3Mtd2l6IhFhbGxlbmhvdXNlIGthbnB1cjIEECMYJzIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEiLhwZQAFi31QVwB3gAkAEBmAGgBKAB1TOqAQsxLjkuOS4zLjIuMrgBDMgBAPgBAZgCIKAC2jPCAhEQLhiABBixAxjRAxiDARjHAcICCxAAGIAEGLEDGIMBwgIIEAAYgAQYsQPCAhEQLhiABBixAxiDARiKBRiNBsICBRAuGIAEwgIOEAAYgAQYsQMYgwEYigXCAg4QLhiABBixAxiDARiKBcICCxAuGIAEGLEDGIMBwgIOEC4YgAQYsQMY0QMYxwHCAggQLhiABBixA8ICFBAuGIAEGLEDGNEDGIMBGMcBGIoFwgIOEC4YgAQYxwEYjgUYrwHCAgsQLhiABBjHARivAcICDhAAGIAEGLEDGIMBGMkDwgIGEAAYFhgemAMAkgcJOC44LjkuNC4zoAfazgKyBwkxLjguOS40LjO4B-0ywgcJMi0xMS4xOS4yyAfpAoAIAA&sclient=gws-wiz -->
