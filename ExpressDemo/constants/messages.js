@@ -1,0 +1,25 @@
+const MESSAGES = {
+  AUTH: {
+    MISSING_VALUES: "Values are Required",
+    INVALID_CREDENTIALS: "Invalid UserID(EMail) and Password",
+    LOGIN_SUCCESS: "Login Successful",
+    LOG_OUT: "Logout Successful",
+    UNAUTHORIZED: "Unauthorized Access",
+  },
+  USER: {
+    CREATED: "User Created Successfully",
+    FETCHED: "User fetched Successfully",
+    FETCHED_ALL: "All Users fetched Successfully",
+    UPDATED: "Users Updated Successfully",
+    DELETED: "Users Deleted Successfully",
+    NOT_FOUND: "User not found",
+  },
+  COMMON: {
+    INTERNAL_ERROR: "Something went wrong, please try again later",
+    GENERAL: "Success",
+    ERROR: "Error",
+    UPLOAD_ERROR: "File not Present",
+  },
+};
+
+module.exports = MESSAGES;
